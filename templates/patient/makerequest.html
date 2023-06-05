@@ -1,0 +1,65 @@
+{% extends 'patient/patientbase.html' %}
+{% block content %}
+{% load widget_tweaks %}
+{%load static%}
+<head>
+  <title>Formulaire de patient</title>
+  <link href="{% static "css/main.css" %}"rel="stylesheet" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+  <div class="container" style="padding-top: 50px;">
+    <div class="form-container">
+      <h2 style="color: #0f8ca8;">Formulaire de patient</h2>
+      <form method="POST" autocomplete="off" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="patient-name">Nom du patient</label>
+          {% render_field request_form.patient_name|attr:'required:true'  class="form-control"  %}
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          {% render_field request_form.patient_age|attr:'required:true'  class="form-control"  %}
+        </div>
+        <div class="form-group">
+          <label for="reason">Raison</label>
+          {% render_field request_form.reason|attr:'required:true'  class="form-control"  %}
+        </div>
+        <div class="mb-3">
+            <label for="bloodgroup" class="form-label">Groupe sanguin</label>
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select name="bloodgroup" class="form-select" id="bloodgroup">
+                    <option disabled="disabled" selected="selected">Choose option</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="unit">Unité (en ml)</label>
+          {% render_field request_form.unit|attr:'required:true'   class="form-control"   %}
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #0f8ca8;">Soumettre</button>
+      </form>
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+

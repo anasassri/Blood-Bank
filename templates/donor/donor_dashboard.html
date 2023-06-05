@@ -1,0 +1,69 @@
+{% extends 'donor/donorbase.html' %}
+{% block content %}
+<br><br>
+<div class="container" style="padding-top: 50px;">
+
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="card bg-light">
+          <div class="card-body">
+              <div class="blood">
+                <i class="fas fa-sync-alt xyz" style="color: #0f8ca8;"></i>
+              </div><br>
+              <div>
+                Demande effectuée <br>
+                  {{requestmade}}
+              </div>                            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card bg-light">
+            <div class="card-body">
+                <div class="blood">
+                  <i class="fas fa-sync xyz" style="color: #0f8ca8;" ></i>
+                </div><br>
+                <div>
+                  Demande en attente<br>
+                    {{requestpending}}
+                </div>                            
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <div class="blood">
+                    <i class="fas fa-check-circle xyz" style="color: #0f8ca8;"></i>
+                  </div><br>
+                  <div>
+                    Demande approuvée<br>
+                      {{requestapproved}}
+                  </div>                            
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <div class="blood">
+                    <i class="fas fa-times-circle xyz" style="color: #0f8ca8;"></i>
+                  </div><br>
+                  <div>
+                    Demande rejetée<br>
+                      {{requestrejected}}
+                  </div>                            
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock content %}

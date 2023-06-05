@@ -1,0 +1,895 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!--====== Title ======-->
+  <title>DON du Sang</title>
+
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="{% static 'images/Asset 1.png' %}" type="image/svg" />
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="{% static 'css/lineicons.css' %}" />
+
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="{% static 'css/tiny-slider.css' %}" />
+
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="{% static 'css/glightbox.min.css' %}" />
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/LineIcons.eot' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/LineIcons.ttf' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/LineIcons.woff' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/LineIcons.woff2' %}">
+
+
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!--====== NAVBAR NINE PART START ======-->
+
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+              <img src="{% static 'images/Asset 1.png' %}" alt="Logo" />
+            </a>
+            <a class="navbar-brand" href="/">
+              <img src="{% static 'images/ministere-sante.png' %}" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="#hero-area">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="/patient/patientlogin">Patient</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="page-scroll" href="/donor/donorlogin">Donateur</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll"  href="/adminlogin">Administrateur</a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="navbar-btn d-none d-lg-inline-block">
+              <a class="menu-bar" href="#side-menu-left"><i class="lni lni-menu"></i></a>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== NAVBAR NINE PART ENDS ======-->
+
+  <!--====== SIDEBAR PART START ======-->
+
+  <div class="sidebar-left">
+    <div class="sidebar-close">
+      <a class="close" href="#close"><i class="lni lni-close"></i></a>
+    </div>
+    <div class="sidebar-content">
+      <div class="sidebar-logo">
+        <a href="index.html"><img src="{% static 'images/Asset 1.png' %}" alt="Logo" style="width: 45%;" /></a>
+      </div>
+      <p class="text">Un engagement vital : Rejoignez la chaîne du don de sang et donnez de l'espoir !</p>
+      <!-- logo -->
+      <div class="sidebar-menu">
+        <h5 class="menu-title">Liens rapides</h5>
+        <ul>
+          <li><a href="javascript:void(0)">À propos de nous</a></li>
+          <li><a href="javascript:void(0)">Notre équipe</a></li>
+          <li><a href="javascript:void(0)">Dernières actualités</a></li>
+          <li><a href="javascript:void(0)">Contactez-nous</a></li>
+        </ul>
+      </div>
+      <!-- menu -->
+      <div class="sidebar-social align-items-center justify-content-center">
+        <h5 class="social-title">Suivez-nous sur</h5>
+        <ul>
+          <li>
+            <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="lni lni-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar social -->
+    </div>
+    <!-- content -->
+  </div>
+  <div class="overlay-left"></div>
+
+  <!--====== SIDEBAR PART ENDS ======-->
+
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>Un geste précieux,<br> une vie préservée : Faites don de votre sang aujourd'hui !</h1>
+            <p>
+              Sa Majesté le Roi Mohammed VI, que Dieu L’assiste, s'est rendu, au Centre régional de transfusion sanguine de Tétouan où le Souverain a effectué un don de sang.
+            </p>
+            <div class="button">
+              <a href="/donor/donorlogin" class="btn primary-btn">Commencer</a>
+              <a href="https://www.youtube-nocookie.com/embed/rb1YmVGPx3k?start=38"
+                class="glightbox video-button">
+                <span class="btn icon-btn rounded-full">
+                  <i class="lni lni-play"></i>
+                </span>
+                <span class="text">Watch Intro</span> 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="{% static 'images/SM-le-Roi-lance-la-campagne-nationale-du-don-de-Sang-2013-07-30.jpg' %}" alt="#" />
+         
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
+
+  <!--====== ABOUT FIVE PART START ======-->
+
+  <section class="about-area about-five">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-12">
+          <div class="about-image-five">
+            <svg class="shape" width="106" height="134" viewBox="0 0 106 134" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="1.66654" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="1.66654" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="16.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="16.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="16.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="16.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="16.333" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="16.333" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="16.333" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="16.333" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="16.333" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="16.333" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="30.9998" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="30.9998" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="30.9998" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="30.9998" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="31" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6668" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="31" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6668" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="31" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6668" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="31" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6668" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="31" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6668" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="31" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="74.6668" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="45.6665" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="89.3333" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="60.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="1.66679" r="1.66667" fill="#DADADA" />
+              <circle cx="60.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="16.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="60.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="31.0001" r="1.66667" fill="#DADADA" />
+              <circle cx="60.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="45.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="60.333" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="60.3335" r="1.66667" fill="#DADADA" />
+              <circle cx="60.333" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="88.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="60.333" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="117.667" r="1.66667" fill="#DADADA" />
+              <circle cx="60.333" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="74.6668" r="1.66667" fill="#DADADA" />
+              <circle cx="60.333" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="103" r="1.66667" fill="#DADADA" />
+              <circle cx="60.333" cy="132" r="1.66667" fill="#DADADA" />
+              <circle cx="104" cy="132" r="1.66667" fill="#DADADA" />
+            </svg>
+            <img src="{% static 'images/yunus-tug-aLgOaY8iyJE-unsplash.jpg' %}" alt="about" /> 
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="about-five-content">
+            <h6 class="small-title text-lg">Don de sang</h6>
+            <h2 class="main-title fw-bold">Un acte de générosité qui change des vies : Donnez votre sang aujourd'hui !</h2>
+            <div class="about-five-tab">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-who-tab" data-bs-toggle="tab" data-bs-target="#nav-who"
+                    type="button" role="tab" aria-controls="nav-who" aria-selected="true">Avantages </button>
+                  <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
+                    type="button" role="tab" aria-controls="nav-vision" aria-selected="false">Qui peut donner ?</button>
+                  <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
+                    type="button" role="tab" aria-controls="nav-history" aria-selected="false">Risques ?</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
+                  <p>Les bienfaits du don de sang incluent la stimulation de la circulation sanguine et de la production de cellules sanguines, ainsi que la réduction du taux de fer dans le corps, ce qui peut contribuer à prévenir les maladies cardiovasculaires. De plus, les donneurs réguliers de sang ont montré une moindre vulnérabilité aux infections et aux maladies circulatoires telles que la leucémie.</p>
+               </div>
+                <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                  <p>Toute personne en bonne santé.
+                    Il faut être âgé de 18 à 60 ans.
+                    Peser plus de 50 kg.
+                    Il y’a des cas exceptionnels empêche temporairement le don de sang, parmi eux : <br>
+                    
+                    Après certains vaccins ou La prise de certains médicaments : Délai à respecter 3 semaines.
+                    Après les soins dentaires, une avulsion dentaire, La Hijama ou l’extraction par ventouses : Délai à respecter 6 mois.
+                    Au cas de la tuberculose : Délais à respecter 5 ans après la guérison.</p>
+                  
+                </div>
+                <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
+                  <p>Les donneurs ne risquent pas d’être infectés, car le matériel de prélèvement est stérile, à usage unique supprime tout risque de contamination et la quantité de sang prélevée n’est pas préjudiciable pour leurs santés.</p>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== ABOUT FIVE PART ENDS ======-->
+
+  <!-- ===== service-area start ===== -->
+  <section id="services" class="services-area services-eight">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Don de sang</h6>
+              <h2 class="fw-bold">Pourquoi donner du sang ?</h2>
+              <p>
+                Donner du sang, est un excellent service humanitaire pour sauver des vies humaines lors : 
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-syringe"></i>
+            </div>
+            <div class="service-content">
+              <h4>Des Chirurgies</h4>
+              <p>
+                Transfusions sanguines vitales lors des chirurgies cardiaques, vasculaires et transplantations d'organes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-hospital"></i>
+            </div>
+            <div class="service-content">
+              <h4>le traitement des malades</h4>
+              <p>
+                Transfusions régulières pour améliorer la santé des patients atteints de maladies génétiques, cancer, insuffisance rénale, thalassémie, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-ambulance"></i>
+            </div>
+            <div class="service-content">
+              <h4>Accidents</h4>
+              <p>
+                Le sang est nécessaire en urgence pour traiter les blessures graves et les traumatismes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-heart"></i>
+            </div>
+            <div class="service-content">
+              <h4>sauver trois vies</h4>
+              <p>
+                L'impact : Chaque don de sang peut sauver jusqu'à trois vies, car le sang est séparé en différents composants qui peuvent être utilisés pour traiter différents patients.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-users"></i>
+            </div>
+            <div class="service-content">
+              <h4>La demande constante</h4>
+              <p>
+                Toutes les 10 secondes, quelqu'un a besoin d'une transfusion sanguine pour sauver sa vie, soulignant ainsi le besoin continu de donneurs de sang.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-grow"></i>
+            </div>
+            <div class="service-content">
+              <h4>En tant que devoir religieux</h4>
+              <p>
+                Dans certaines religions, le don de sang est considéré comme un devoir moral et religieux pour aider les autres dans le besoin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Start Cta Area -->
+  <section id="call-action" class="call-action">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+          <div class="inner-content">
+            <h2>Lieux de don du sang disponibles</h2>
+            <p>
+              Donner son sang au Maroc est facilité par de nombreux centres de collecte, qu'il s'agisse de collectes mobiles ou de Maisons du don. Ces sites répartis dans tout le pays permettent aux donneurs de sang de contribuer régulièrement à l'approvisionnement en sang.
+            </p>
+            <div class="light-rounded-buttons">
+              <a href="https://www.allodocteurs.africa/maroc-ou-et-comment-donner-son-sang-4927.html" class="btn primary-btn-outline" target="_blank" >En savoir plus </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Cta Area -->
+
+
+
+  <!-- Start Latest News Area -->
+  <div id="blog" class="latest-news-area section">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Nouveautés récentes </h6>
+              <h2 class="fw-bold">Dernières actualités et blog</h2>
+              <p>
+                Restez connecté(e) ! Découvrez les dernières actualités et suivez notre blog pour des histoires inspirantes et des mises à jour passionnantes. Restez informé(e) et inspirez-vous à travers notre section dédiée.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="{% static 'images/blog/luann-hunt-X20g2GQsVdA-unsplash.jpg' %}" alt="Blog" /></a>
+              <div class="meta-details">
+                <img class="thumb" src="{% static 'images/blog/b6.jpg' %}" alt="Author" />
+                <span>Par RANIA MOUNA</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="https://www.toutsurlatransfusion.com/actualite-transfusion-et-don-du-sang/un-court-metrage-pour-promouvoir-le-don-de-sang.php" target="_blank"> Un court-métrage pour promouvoir le don de sang </a>
+              </h4>
+              <p>
+                À l'occasion de la semaine nationale du don de sang du 12 au 18 juin à Moncoutant (Deux-Sèvres), ne manquez pas notre captivant court-métrage présentant dix témoignages de donneurs de sang.
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="{% static 'images/blog/national-cancer-institute-PP5nO5gcLdA-unsplash.jpg' %}" alt="Blog" /></a>
+              <div class="meta-details">
+                <img class="thumb" src="{% static 'images/blog/hnh.jpg' %}" alt="Author" />
+                <span>Par Dr. Anas EL assri</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="https://www.toutsurlatransfusion.com/actualite-transfusion-et-don-du-sang/l-hepatite-e-testee-chez-tous-les-donneurs-de-sang.php" target="_blank">
+                  L'hépatite E testée chez tous les donneurs de sang
+                </a>
+              </h4>
+              <p>
+                Dépistage génomique de l'hépatite E : Sécurité accrue des transfusions sanguines en Maroc
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <!-- Single News -->
+          <div class="single-news">
+            <div class="image">
+              <a href="javascript:void(0)"><img class="thumb" src="{% static 'images/blog/defocused-woman-holding-heart-shape.jpg' %}" alt="Blog" /></a>
+              <div class="meta-details">
+                <img class="thumb" src="{% static 'images/blog/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg' %}" alt="Author" />
+                <span>Par RIM Raoui</span>
+              </div>
+            </div>
+            <div class="content-body">
+              <h4 class="title">
+                <a href="https://www.toutsurlatransfusion.com/actualite-transfusion-et-don-du-sang/dites-merci-aux-donneurs-de-sang.php" target="_blank">
+                  Dites merci aux donneurs de sang !
+                </a>
+              </h4>
+              <p>
+                Afin de préparer la Journée Mondiale des Donneurs de Sang (JMDS), l'Etablissement Marocains du sang (EFM) donne la possibilité à tous de laisser un message aux donneurs de sang pour leur dire "MERCI".
+              </p>
+            </div>
+          </div>
+          <!-- End Single News -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Latest News Area -->
+
+  <!-- Start Brand Area -->
+  <div id="clients" class="brand-area section">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Rencontrez nos partenaires </h6>
+              <h2 class="fw-bold"> Nos partenaires, Nos héros.</h2>
+              <p>
+                Grâce à nos partenaires engagés, nous renforçons l'approvisionnement en produits sanguins et apportons une aide vitale aux patients. Leur soutien est essentiel pour sauver des vies et faire une réelle différence. Nous sommes reconnaissants envers nos partenaires pour leur dévouement à cette noble cause. Ensemble, nous sommes plus forts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-12">
+          <div class="clients-logos">
+            <div class="single-image">
+              <img src="{% static 'images/ministere-jeun.png'%}" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="{% static 'images/ministerelogo.jpg' %}" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="{% static 'images/client-logo/téléchargement (1).jfif' %}" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="{% static 'images/client-logo/téléchargement.jfif' %}" alt="Brand Logo Images" />
+            </div>
+            <div class="single-image">
+              <img src="{% static 'images/client-logo/sehatilogo.png' %}" alt="Brand Logo Images" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Brand Area -->
+
+  <!-- ========================= contact-section start ========================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="contact-item-wrapper">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-phone"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Contact</h4>
+                    <p>+212 6 20 50 86 71</p>
+                    <p>SEHATI@contact.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Address</h4>
+                    <p>N335, Avenue Mohammed V ,  FES</p>
+                    <p>MAROC</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-12">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="lni lni-alarm-clock"></i>
+                  </div>
+                  <div class="contact-content">
+                    <h4>Programme </h4>
+                    <p>24 Heures / 7 jours Ouvert</p>
+                    <p>Heures : 10 AM - 5:30 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8">
+          <div class="contact-form-wrapper">
+            <div class="row">
+              <div class="col-xl-10 col-lg-8 mx-auto">
+                <div class="section-title text-center">
+                  <span> Contactez-nous </span>
+                  <h2>
+                    Prêt à commencer
+                  </h2>
+                  <p>
+                    "Un engagement vital : Rejoignez la chaîne du don de sang et donnez de l'espoir !"
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="about-image-five">
+                    <svg class="shape" width="106" height="134" viewBox="0 0 106 134" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="1.66654" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="1.66654" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.333" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.333" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.333" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.333" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.333" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="16.333" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="30.9998" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="30.9998" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="30.9998" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="30.9998" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="31" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6668" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="31" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6668" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="31" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6668" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="31" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6668" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="31" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6668" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="31" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="74.6668" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="45.6665" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="89.3333" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.3333" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="1.66679" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.3333" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="16.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.3333" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="31.0001" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.3333" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="45.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.333" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="60.3335" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.333" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="88.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.333" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="117.667" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.333" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="74.6668" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.333" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="103" r="1.66667" fill="#DADADA" />
+                      <circle cx="60.333" cy="132" r="1.66667" fill="#DADADA" />
+                      <circle cx="104" cy="132" r="1.66667" fill="#DADADA" />
+                    </svg>
+                    <img src="{% static 'images/e3.jpg' %}" alt="about" />
+                    
+                  </div>
+                 
+                </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= contact-section end ========================= -->
+
+  <!-- ========================= map-section end ========================= -->
+  <section class="map-section map-style-9">
+    <div class="map-container">
+      <object style="border:0; height: 500px; width: 100%;"
+        data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26454.20720620849!2d-4.999766294165037!3d34.02396285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8b484d445777%3A0x10e6aaaeedd802ef!2zRsOocw!5e0!3m2!1sfr!2sma!4v1685403084370!5m2!1sfr!2sma"></object>
+    </div>
+    </div>
+  </section>
+  <!-- ========================= map-section end ========================= -->
+
+  <!-- Start Footer Area -->
+  <footer class="footer-area footer-eleven">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-about">
+                <div class="logo">
+                  <a href="/templates/blood/index.html">
+                    <img src="{% static 'images/Asset 1.png' %}" alt="#" class="img-fluid" style="width: 40%;"/>
+                  </a>
+                </div>
+                <p>
+                  Merci de visiter notre site du don du sang, sauver des vies ensemble, nous apprécions votre soutien précieux.
+                </p>
+                <p class="copyright-text">
+                  <span>© 2024 all copyrights reserved .</span>Designed and Developed by
+                  <a href="javascript:void(0)" rel="nofollow"> Anas El Assri </a>
+                </p>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-link">
+                <h5>Ressources Humaines</h5>
+                <ul>
+                  <li><a href="javascript:void(0)">Rectrutement & Concours</a></li>
+                  <li><a href="javascript:void(0)">Aptitude professionnelle</a></li>
+                  <li><a href="https://www.sante.gov.ma/Publications/Guides-Manuels/Pages/default.aspx" target="_blank">Guides</a></li>
+                  <li><a href="javascript:void(0)">Avancement au choix</a></li>
+                </ul>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-link">
+                <h5>Support</h5>
+                <ul>
+                  <li><a href="https://www.sante.gov.ma/Pages/Accueil.aspx" target="_blank" >Ministère de la santé</a></li>
+                  <li><a href="https://sehati.gov.ma/" target="_blank">Sehati.gov.ma</a></li>
+                  <li><a href="https://www.sante.gov.ma/Medicaments/Pharmacovigilance/Pages/default.aspx">Pharmacovigilance</a></li>
+                  <li><a href="https://www.sante.gov.ma/Medicaments/PHCS/Pages/default.aspx">Médicaments des Hôpitaux et Centres de santé</a></li>
+                </ul>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget newsletter">
+                <h5>Newsletter</h5>
+                <p>Abonnez-vous à notre newsletter pour les dernières mises à jour.</p>
+                <form action="#" method="get" target="_blank" class="newsletter-form">
+                  <input name="EMAIL" placeholder="Email address" required="required" type="email" />
+                  <div class="button">
+                    <button class="sub-btn">
+                      <i class="lni lni-envelope"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ End Footer Top -->
+  </footer>
+  <!--/ End Footer Area -->
+
+	  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
+
+  <!--====== js ======-->
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/glightbox.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/tiny-slider.js' %}"></script>
+
+  <script>
+
+    //===== close navbar-collapse when a  clicked
+    let navbarTogglerNine = document.querySelector(
+      ".navbar-nine .navbar-toggler"
+    );
+    navbarTogglerNine.addEventListener("click", function () {
+      navbarTogglerNine.classList.toggle("active");
+    });
+
+    // ==== left sidebar toggle
+    let sidebarLeft = document.querySelector(".sidebar-left");
+    let overlayLeft = document.querySelector(".overlay-left");
+    let sidebarClose = document.querySelector(".sidebar-close .close");
+
+    overlayLeft.addEventListener("click", function () {
+      sidebarLeft.classList.toggle("open");
+      overlayLeft.classList.toggle("open");
+    });
+    sidebarClose.addEventListener("click", function () {
+      sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open");
+    });
+
+    // ===== navbar nine sideMenu
+    let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+
+    sideMenuLeftNine.addEventListener("click", function () {
+      sidebarLeft.classList.add("open");
+      overlayLeft.classList.add("open");
+    });
+
+    //========= glightbox
+    GLightbox({
+      'href': ' src="https://www.youtube-nocookie.com/embed/rb1YmVGPx3k?start=38" ',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoplayVideos': true,
+    });
+
+  </script>
+</body>
+
+</html>
